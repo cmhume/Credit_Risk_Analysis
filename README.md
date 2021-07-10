@@ -15,6 +15,9 @@
 #### RandomOverSampler
 
 
+![randomoversampler](https://user-images.githubusercontent.com/78699521/125178028-b6e88300-e195-11eb-8d00-a7d96178bcde.png)
+
+
 * balanced accuracy score: 0.6870039085293
 
 
@@ -32,6 +35,8 @@
 
 #### SMOTE
 
+
+![smote](https://user-images.githubusercontent.com/78699521/125178034-c36cdb80-e195-11eb-9a04-49f347462079.png)
 
 * balanced accuracy score: 0.6625110564143412
 
@@ -54,6 +59,8 @@
 #### Cluster Centroids
 
 
+![clustercentroids](https://user-images.githubusercontent.com/78699521/125178036-c962bc80-e195-11eb-8aa3-1f5ca12a32ad.png)
+
 * balanced accuracy score: 0.5442661782548694
 
 
@@ -74,6 +81,8 @@
 
 #### SMOTEENN
 
+
+![smoteenn](https://user-images.githubusercontent.com/78699521/125178039-cf589d80-e195-11eb-8602-a1ce04a01376.png)
 
 * balanced accuracy score: 0.6400726134353378
 
@@ -96,6 +105,8 @@
 #### Balanced Random Forest Classifier
 
 
+![brfc](https://user-images.githubusercontent.com/78699521/125178042-d67fab80-e195-11eb-95d8-6ee6eb5d7ecc.png)
+
 * balanced accuracy score: 0.7885466545953005
 
 
@@ -113,6 +124,8 @@
 
 #### Easy Ensemble AdaBoost Classifier
 
+
+![eec](https://user-images.githubusercontent.com/78699521/125178044-daabc900-e195-11eb-8112-695e3884dfce.png)
 
 * balanced accuracy score: 0.9316600714093861
 
