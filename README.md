@@ -9,7 +9,7 @@
 ## Results:
 
 
-### Machine Learning Models
+### Oversampling 
 
 
 #### RandomOverSampler
@@ -48,6 +48,9 @@
     * low:risk: 0.69
 
 
+### Undersampling
+
+
 #### Cluster Centroids
 
 
@@ -64,6 +67,9 @@
     * avg: 0.40
     * high-risk: 0.69
     * low:risk: 0.40
+
+
+### Combination Sampling
 
 
 #### SMOTEENN
@@ -84,7 +90,10 @@
     * low:risk: 0.58
 
 
-#### BalancedRandomForestClassifier
+### Ensemble Learners
+
+
+#### Balanced Random Forest Classifier
 
 
 * balanced accuracy score: 0.7885466545953005
@@ -102,7 +111,7 @@
     * low:risk: 0.87
 
 
-#### EasyEnsembleClassifier
+#### Easy Ensemble AdaBoost Classifier
 
 
 * balanced accuracy score: 0.9316600714093861
