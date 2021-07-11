@@ -4,6 +4,7 @@
 ## Overview:
 
 
+The purpose of this analysis is to use machine learning algorithms to predict credit risk.  The dataset analyzed was a compilation of credit card credit information from LendingClub.  Six different machine learning algorithms were used on the dataset to compare credit risk predictions and determine which model predicted credit risk the best.  Because the dataset is unbalanced with more low-risk than high-risk datapoints, the libraries from imbalanced-learn and scikit-learn were used in this analysis. Two oversampling models, RandomOverSampler and Smote, one undersampling method, Cluster Centroid, one combination method, SMOTEENN, and two ensemble learners, Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier were used to predict credit risk on the LendingClub dataset.  All of the analyses were performed in Jupyter Notebook.
 
 
 ## Results:
