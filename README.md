@@ -4,7 +4,7 @@
 ## Overview:
 
 
-The purpose of this analysis is to use machine learning algorithms to predict credit risk.  The dataset analyzed was a compilation of credit card credit information from LendingClub.  Six different machine learning algorithms were used on the dataset to compare credit risk predictions and determine which model predicted credit risk the best.  Because the dataset is unbalanced with more low-risk than high-risk datapoints, the libraries from imbalanced-learn and scikit-learn were used in this analysis. Two oversampling models, RandomOverSampler and Smote, one undersampling method, Cluster Centroid, one combination method, SMOTEENN, and two ensemble learners, Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier were used to predict credit risk on the LendingClub dataset.  All of the analyses were performed in Jupyter Notebook.
+The purpose of this analysis was to use machine learning algorithms to predict credit risk.  The dataset analyzed was a compilation of credit card credit information from LendingClub.  Six different machine learning algorithms were used on the dataset to compare credit risk predictions and determine which model predicted credit risk the best.  Because the dataset was unbalanced with more low-risk than high-risk datapoints, the libraries from imbalanced-learn and scikit-learn were used in this analysis. Two oversampling models, RandomOverSampler and Smote, one undersampling method, Cluster Centroid, one combination method, SMOTEENN, and two ensemble learners, Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier were used to predict credit risk on the LendingClub dataset.  All of the analyses were performed in Jupyter Notebook.
 
 
 ## Results:
@@ -25,13 +25,13 @@ The purpose of this analysis is to use machine learning algorithms to predict cr
 * precision score: 
     * avg: 0.99
     * high-risk: 0.01
-    * low:risk: 1.00
+    * low-risk: 1.00
 
 
 * recall score:
     * avg: 0.60
     * high-risk: 0.77
-    * low:risk: 0.60
+    * low-risk: 0.60
 
 
 #### SMOTE
@@ -45,13 +45,13 @@ The purpose of this analysis is to use machine learning algorithms to predict cr
 * precision score: 
     * avg: 0.99
     * high-risk: 0.01
-    * low:risk: 1.00
+    * low-risk: 1.00
 
 
 * recall score:
     * avg: 0.69
     * high-risk: 0.73
-    * low:risk: 0.69
+    * low-risk: 0.69
 
 
 ### Undersampling
@@ -68,13 +68,13 @@ The purpose of this analysis is to use machine learning algorithms to predict cr
 * precision score: 
     * avg: 0.99
     * high-risk: 0.01
-    * low:risk: 1.00
+    * low-risk: 1.00
 
 
 * recall score:
     * avg: 0.40
     * high-risk: 0.69
-    * low:risk: 0.40
+    * low-risk: 0.40
 
 
 ### Combination Sampling
@@ -91,13 +91,13 @@ The purpose of this analysis is to use machine learning algorithms to predict cr
 * precision score: 
     * avg: 0.99
     * high-risk: 0.01
-    * low:risk: 1.00
+    * low-risk: 1.00
 
 
 * recall score:
     * avg: 0.58
     * high-risk: 0.70
-    * low:risk: 0.58
+    * low-risk: 0.58
 
 
 ### Ensemble Learners
@@ -114,13 +114,13 @@ The purpose of this analysis is to use machine learning algorithms to predict cr
 * precision score: 
     * avg: 0.99
     * high-risk: 0.03
-    * low:risk: 0.99
+    * low-risk: 0.99
 
 
 * recall score:
     * avg: 0.87
     * high-risk: 0.70
-    * low:risk: 0.87
+    * low-risk: 0.87
 
 
 #### Easy Ensemble AdaBoost Classifier
@@ -134,15 +134,15 @@ The purpose of this analysis is to use machine learning algorithms to predict cr
 * precision score: 
     * avg: 0.99
     * high-risk: 0.09
-    * low:risk: 1.00
+    * low-risk: 1.00
 
 
 * recall score:
     * avg: 0.94
     * high-risk: 0.92
-    * low:risk: 0.94
+    * low-risk: 0.94
 
 
 ## Summary:
 
-summary and model reccommendation 
+The balanced accuracy score, or percentage of correct credit predictions ranged from 0.54(54% correct) to 0.93(93% correct) among the tested models, with the undersampling technique, Cluster Centroids, doing the worst, and the ensemble learner, Easy Ensemble AdaBoost Classifier, receiving the highest score.  The precision scores of all models were in a similar range, with all models having an average score of 0.99.  The average is misleading as the precision for high-risk credit was between 0.01 and 0.09 for all models, while the precision for low-risk credit was much higher varying from 0.99 to 1.00 for all models.  Looking at precision, the Easy Ensemble AdaBoost Classifier algorithm had better precision for high-risk credit with a score of 0.09, indicating a 9% reliability of a correct classification for high risk credit.  Recall scores varied a lot more between the tested algorithms, with average scores ranging from 0.40 to 0.94.  Different from the precision scores, recall scores tended to be higher for high-risk credit than low-risk credit, indicating all models had more sensitivity to correctly predict high credit risk.  The undersampling model, Cluster Centroids, had the lowest recall score overall with an average score of 0.40.  Both ensemble learners had higher recall and high-risk precision scores than the other algorithms tested, with the Easy Ensemble AdaBoost Classifier receiving the best scores overall.  Of the six models tested the Easy Ensemble AdaBoost Classifier appears to be the best at predicting high risk credit, with a balanced accuracy score of 0.93, the highest high-risk precision score at 0.09, and the greatest recall scores at 0.92 for high-risk and 0.94 for low-risk credit.  This model    
